@@ -5,59 +5,83 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 export default function Home() {
-  // Sample featured services data
-  const featuredServices = [
+  // Category data
+  const categories = [
     {
       id: 1,
-      name: 'Hotel Bookings',
-      image: '/images/hotel.jpg',
-      discount: '30%',
-      description: 'Exclusive discounts on premium hotels worldwide'
+      name: 'DIVING',
+      image: '/images/diving.jpg',
+      comingSoon: false
     },
     {
       id: 2,
-      name: 'Day Trips',
-      image: '/images/day-trip.jpg',
-      discount: '25%',
-      description: 'Explore local attractions with expert guides'
+      name: 'TRAVEL',
+      image: '/images/travel.jpg',
+      comingSoon: false
     },
     {
       id: 3,
-      name: 'Car Rentals',
-      image: '/images/car-rental.jpg',
-      discount: '15%',
-      description: 'Affordable vehicle rentals for your journey'
+      name: 'PRIVATE PLANES',
+      image: '/images/private-planes.jpg',
+      comingSoon: false
     },
     {
       id: 4,
-      name: 'Cultural Tours',
-      image: '/images/cultural-tour.jpg',
-      discount: '40%',
-      description: 'Immerse yourself in local traditions and history'
+      name: 'RESTAURANT',
+      image: '/images/restaurant.jpg',
+      comingSoon: false
+    },
+    {
+      id: 5,
+      name: 'TOURISM',
+      image: '/images/tourism.jpg',
+      comingSoon: false
+    },
+    {
+      id: 6,
+      name: 'ENTERTAINMENT',
+      image: '/images/entertainment.jpg',
+      comingSoon: false
+    },
+    {
+      id: 7,
+      name: 'BEAUTY SALONS',
+      image: '/images/beauty-salons.jpg',
+      comingSoon: false
+    },
+    {
+      id: 8,
+      name: 'HEALTH CARE',
+      image: '/images/healthcare.jpg',
+      comingSoon: false
+    },
+    {
+      id: 9,
+      name: 'SHOPPING',
+      image: '/images/shopping.jpg',
+      comingSoon: false
+    },
+    {
+      id: 10,
+      name: 'BEAUTY SALONS',
+      image: '/images/beauty-salons.jpg',
+      comingSoon: true
+    },
+    {
+      id: 11,
+      name: 'HEALTH CARE',
+      image: '/images/healthcare.jpg',
+      comingSoon: true
+    },
+    {
+      id: 12,
+      name: 'SHOPPING',
+      image: '/images/shopping.jpg',
+      comingSoon: true
     }
   ];
 
-  // Sample testimonials data
-  const testimonials = [
-    {
-      id: 1,
-      name: 'Sarah Johnson',
-      photo: '/images/testimonial1.jpg',
-      text: 'The discount card saved me over $200 on my hotel booking in Paris. Highly recommended!'
-    },
-    {
-      id: 2,
-      name: 'Michael Chen',
-      photo: '/images/testimonial2.jpg',
-      text: 'I used my card for a cultural tour in Tokyo and the process was seamless. Will definitely use again!'
-    },
-    {
-      id: 3,
-      name: 'Emma Rodriguez',
-      photo: '/images/testimonial3.jpg',
-      text: 'Great customer service when I needed help with my booking. The discounts are genuine and substantial.'
-    }
-  ];
+  // Testimonials data removed
 
   return (
     <main className="min-h-screen">
@@ -70,7 +94,7 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6">Explore the world at the best prices!</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl">Get exclusive discounts on travel and tourism services with your personal card</p>
           <Link
-            href="#services"
+            href="#categories"
             className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full text-lg font-semibold transition-colors"
           >
             Choose Your Service Now
@@ -78,30 +102,33 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Featured Services */}
-      <section id="services" className="py-16 px-4 bg-gray-50">
+      {/* Save More With Us */}
+      <section id="categories" className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Featured Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {featuredServices.map((service) => (
-              <div key={service.id} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-                <div className="h-48 bg-gray-300 relative">
-                  <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 rounded-bl-lg font-semibold">
-                    {service.discount} OFF
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
-                  <Link
-                    href={`/services/${service.id}`}
-                    className="text-blue-600 font-medium hover:text-blue-800 flex items-center"
-                  >
-                    More
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </Link>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Save More With Us</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {categories.map((category) => (
+              <div key={category.id} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
+                <div className="h-64 relative" style={{ backgroundImage: `url(${category.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                  <h3 className="absolute top-0 left-0 w-full text-center py-4 text-blue-800 font-bold text-xl">{category.name}</h3>
+
+                  {category.comingSoon ? (
+                    <div className="absolute inset-0 flex flex-col items-center justify-center bg-blue-500/70">
+                      <div className="w-24 h-24 border-4 border-white rounded-full flex items-center justify-center">
+                        <div className="text-white text-center">
+                          <p className="font-bold">COMING</p>
+                          <p className="font-bold">SOON</p>
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <Link
+                      href={`/services?category=${category.id}`}
+                      className="absolute inset-0 flex items-center justify-center"
+                    >
+                      {/* Tourism content can go here */}
+                    </Link>
+                  )}
                 </div>
               </div>
             ))}
@@ -170,33 +197,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">What Our Customers Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial) => (
-              <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-md">
-                <div className="flex items-center mb-4">
-                  <div className="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
-                  <h3 className="font-semibold">{testimonial.name}</h3>
-                </div>
-                <p className="text-gray-600 italic">{testimonial.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Testimonials section removed */}
 
       {/* Call to Action */}
       <section className="py-16 px-4 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Join today and get your personal card for free!</h2>
           <Link
-            href="/login"
+            href="/get-card"
             className="inline-block px-8 py-4 bg-white text-blue-600 hover:bg-gray-100 rounded-full text-lg font-semibold transition-colors"
           >
-            Sign Up / Log In
+            Get Card
           </Link>
         </div>
       </section>

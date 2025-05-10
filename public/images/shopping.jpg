@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a7d9c4" />
+      <stop offset="100%" stop-color="#68b0a0" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bg-gradient)" />
+  
+  <!-- Shopping Icons -->
+  <g transform="translate(200, 150)" fill="#ffffff">
+    <!-- Shopping Bag -->
+    <g transform="translate(-60, -10)">
+      <path d="M-30,0 L30,0 L20,50 L-20,50 Z" fill="#ffffff" />
+      <path d="M-15,-30 C-15,-15 -10,0 0,0 C10,0 15,-15 15,-30" stroke="#ffffff" stroke-width="6" fill="none" />
+    </g>
+    
+    <!-- Shopping Cart -->
+    <g transform="translate(40, 10)">
+      <circle cx="-15" cy="25" r="8" fill="#ffffff" />
+      <circle cx="15" cy="25" r="8" fill="#ffffff" />
+      <path d="M-25,0 L25,0 L20,20 L-20,20 Z" fill="#ffffff" />
+      <path d="M-30,-15 L-20,0" stroke="#ffffff" stroke-width="4" fill="none" />
+      <path d="M-20,-15 L30,-15 L25,0" stroke="#ffffff" stroke-width="4" fill="none" />
+    </g>
+    
+    <!-- Price Tag -->
+    <g transform="translate(-10, -40)">
+      <rect x="-20" y="-15" width="40" height="30" rx="5" fill="#ffffff" />
+      <text x="0" y="5" font-family="Arial" font-size="16" font-weight="bold" fill="#68b0a0" text-anchor="middle">SALE</text>
+    </g>
+  </g>
+  
+  <!-- Coming Soon Overlay -->
+  <g transform="translate(200, 150)">
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#ffffff" stroke-width="4" />
+    <text x="0" y="-10" font-family="Arial" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">COMING</text>
+    <text x="0" y="15" font-family="Arial" font-size="16" font-weight="bold" fill="#ffffff" text-anchor="middle">SOON</text>
+  </g>
+</svg>
