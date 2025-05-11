@@ -75,7 +75,7 @@ export default function ServicesPage() {
             <Navbar />
 
             {/* Page Header */}
-            <div className="bg-blue-600 text-white py-16 px-4">
+            <div className="bg-[#0e3b7c] text-white py-16 px-4">
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
                     <p className="text-xl max-w-3xl mx-auto">Browse our wide range of services and get your personal discount card</p>
@@ -90,7 +90,7 @@ export default function ServicesPage() {
                         {categories.map((category, index) => (
                             <button
                                 key={index}
-                                className="px-6 py-2 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition-colors"
+                                className="px-6 py-2 rounded-full border border-[#0e3b7c] text-[#0e3b7c] hover:bg-[#0e3b7c] hover:text-white transition-colors"
                             >
                                 {category}
                             </button>
@@ -102,22 +102,22 @@ export default function ServicesPage() {
                         {services.map((service) => (
                             <div key={service.id} className="bg-white rounded-lg shadow-md overflow-hidden">
                                 <div className="h-48 bg-gray-300 relative">
-                                    <div className="absolute top-0 right-0 bg-blue-600 text-white px-3 py-1 rounded-bl-lg font-semibold">
+                                    <div className="absolute top-0 right-0 bg-[#e91e63] text-white px-3 py-1 rounded-bl-lg font-semibold">
                                         {service.discount} OFF
                                     </div>
                                 </div>
                                 <div className="p-6">
-                                    <span className="text-sm text-blue-600 font-medium">{service.category}</span>
+                                    <span className="text-sm text-[#0e3b7c] font-medium">{service.category}</span>
                                     <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
                                     <p className="text-gray-600 mb-4">{service.description}</p>
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
                                             <span className="text-gray-400 line-through mr-2">${service.originalPrice}</span>
-                                            <span className="text-xl font-bold text-blue-600">${service.discountedPrice}</span>
+                                            <span className="text-xl font-bold text-[#e91e63]">${service.discountedPrice}</span>
                                         </div>
                                         <Link
                                             href={`/services/${service.id}`}
-                                            className="text-blue-600 font-medium hover:text-blue-800 flex items-center"
+                                            className="text-[#0e3b7c] font-medium hover:text-[#e91e63] flex items-center"
                                         >
                                             Details
                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -127,7 +127,7 @@ export default function ServicesPage() {
                                     </div>
                                     <Link
                                         href={`/card/create?service=${service.id}`}
-                                        className="block w-full text-center py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+                                        className="block w-full text-center py-2 bg-[#0e3b7c] text-white rounded-md hover:bg-[#0a2d5e] transition-colors"
                                     >
                                         Get My Card
                                     </Link>
@@ -145,7 +145,7 @@ export default function ServicesPage() {
                     <p className="text-xl text-gray-600 mb-8">Contact us for custom packages and special requests</p>
                     <Link
                         href="/contact"
-                        className="inline-block px-8 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+                        className="inline-block px-8 py-3 bg-[#e91e63] text-white rounded-md hover:bg-[#d81b60] transition-colors"
                     >
                         Contact Us
                     </Link>

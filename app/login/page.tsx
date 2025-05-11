@@ -56,13 +56,13 @@ export default function LoginPage() {
 
                     <div className="flex border-b mb-6">
                         <button
-                            className={`w-1/2 py-2 text-center ${isLogin ? 'text-blue-600 border-b-2 border-blue-600 font-medium' : 'text-gray-500'}`}
+                            className={`w-1/2 py-2 text-center ${isLogin ? 'text-[#0e3b7c] border-b-2 border-[#0e3b7c] font-medium' : 'text-gray-500'}`}
                             onClick={() => setIsLogin(true)}
                         >
                             Log In
                         </button>
                         <button
-                            className={`w-1/2 py-2 text-center ${!isLogin ? 'text-blue-600 border-b-2 border-blue-600 font-medium' : 'text-gray-500'}`}
+                            className={`w-1/2 py-2 text-center ${!isLogin ? 'text-[#0e3b7c] border-b-2 border-[#0e3b7c] font-medium' : 'text-gray-500'}`}
                             onClick={() => setIsLogin(false)}
                         >
                             Sign Up
@@ -80,7 +80,7 @@ export default function LoginPage() {
                                     value={formData.name}
                                     onChange={handleInputChange}
                                     required={!isLogin}
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0e3b7c] focus:border-[#0e3b7c]"
                                 />
                             </div>
                         )}
@@ -94,7 +94,7 @@ export default function LoginPage() {
                                 value={formData.email}
                                 onChange={handleInputChange}
                                 required
-                                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0e3b7c] focus:border-[#0e3b7c]"
                             />
                         </div>
 
@@ -107,7 +107,7 @@ export default function LoginPage() {
                                 value={formData.password}
                                 onChange={handleInputChange}
                                 required
-                                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0e3b7c] focus:border-[#0e3b7c]"
                             />
                         </div>
 
@@ -121,14 +121,14 @@ export default function LoginPage() {
                                     value={formData.confirmPassword}
                                     onChange={handleInputChange}
                                     required={!isLogin}
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-[#0e3b7c] focus:border-[#0e3b7c]"
                                 />
                             </div>
                         )}
 
                         {isLogin && (
                             <div className="flex justify-end mb-6">
-                                <Link href="/forgot-password" className="text-sm text-blue-600 hover:underline">
+                                <Link href="/forgot-password" className="text-sm text-[#0e3b7c] hover:text-[#e91e63] hover:underline">
                                     Forgot Password?
                                 </Link>
                             </div>
@@ -136,7 +136,7 @@ export default function LoginPage() {
 
                         <button
                             type="submit"
-                            className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+                            className="w-full px-4 py-2 bg-[#0e3b7c] text-white rounded-md hover:bg-[#0a2d5e] transition-colors"
                         >
                             {isLogin ? 'Log In' : 'Sign Up'}
                         </button>
@@ -148,7 +148,7 @@ export default function LoginPage() {
                             <button
                                 type="button"
                                 onClick={toggleForm}
-                                className="ml-1 text-blue-600 hover:underline"
+                                className="ml-1 text-[#0e3b7c] hover:text-[#e91e63] hover:underline"
                             >
                                 {isLogin ? 'Sign Up' : 'Log In'}
                             </button>

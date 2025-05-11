@@ -85,7 +85,7 @@ export default function AccountPage() {
                             </div>
 
                             <div className="mt-6">
-                                <button className="w-full px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                                <button className="w-full px-4 py-2 bg-[#0e3b7c] text-white rounded-md hover:bg-[#0a2d5e] transition-colors">
                                     Edit Profile
                                 </button>
                             </div>
@@ -99,7 +99,7 @@ export default function AccountPage() {
                                 <h2 className="text-xl font-semibold">My Discount Cards</h2>
                                 <Link
                                     href="/services"
-                                    className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm"
+                                    className="px-4 py-2 bg-[#e91e63] text-white rounded-md hover:bg-[#d81b60] transition-colors text-sm"
                                 >
                                     Get New Card
                                 </Link>
@@ -128,14 +128,14 @@ export default function AccountPage() {
                                                     <td className="px-4 py-4 whitespace-nowrap">{card.issueDate}</td>
                                                     <td className="px-4 py-4 whitespace-nowrap">{card.expiryDate}</td>
                                                     <td className="px-4 py-4 whitespace-nowrap">
-                                                        <span className={`px-2 py-1 text-xs rounded-full ${card.isValid ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`}>
+                                                        <span className={`px-2 py-1 text-xs rounded-full ${card.isValid ? 'bg-green-100 text-green-800' : 'bg-[#e91e63] bg-opacity-10 text-[#e91e63]'}`}>
                                                             {card.isValid ? 'Valid' : 'Expired'}
                                                         </span>
                                                     </td>
                                                     <td className="px-4 py-4 whitespace-nowrap">
-                                                        <button className="text-blue-600 hover:text-blue-800 mr-3">View</button>
+                                                        <button className="text-[#0e3b7c] hover:text-[#e91e63] mr-3">View</button>
                                                         {!card.isValid && (
-                                                            <button className="text-blue-600 hover:text-blue-800">Renew</button>
+                                                            <button className="text-[#0e3b7c] hover:text-[#e91e63]">Renew</button>
                                                         )}
                                                     </td>
                                                 </tr>
@@ -148,7 +148,7 @@ export default function AccountPage() {
                                     <p className="text-gray-500 mb-4">You don&apos;t have any discount cards yet.</p>
                                     <Link
                                         href="/services"
-                                        className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+                                        className="px-4 py-2 bg-[#0e3b7c] text-white rounded-md hover:bg-[#0a2d5e] transition-colors"
                                     >
                                         Browse Services
                                     </Link>
