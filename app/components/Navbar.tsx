@@ -16,14 +16,17 @@ export default function Navbar() {
     const inspirationTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
     return (
-        <nav className="bg-[#0e3b7c] shadow-md">
+        <nav className="bg-gradient-to-r from-black to-[#0e3b7c] shadow-md">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-20">
+                <div className="flex justify-between h-24">
                     <div className="flex">
                         <div className="flex-shrink-0 flex items-center">
-                            <Link href="/" className="font-bold text-2xl text-white italic logo-link">
-                                <span className="uppercase tracking-wider">Best Buyer</span>
-                                <span className="text-xs block text-gray-300 mt-[-5px]">SINCE 1975</span>
+                            <Link href="/" className="logo-link">
+                                <img
+                                    src="/images/logo.png"
+                                    alt="Best Buyer Logo"
+                                    className="h-16 w-auto"
+                                />
                             </Link>
                         </div>
                     </div>
@@ -214,6 +217,8 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
+            {/* Add a subtle gradient separator */}
+            <div className="w-full h-1 bg-gradient-to-r from-amber-300 via-[#0e3b7c] to-black opacity-50"></div>
 
             {/* Mobile menu, show/hide based on menu state */}
             {isMenuOpen && (

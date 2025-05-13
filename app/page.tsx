@@ -34,7 +34,7 @@ export default function Home() {
     {
       id: 5,
       name: 'TOURISM',
-      image: '/images/tourism.jpg',
+      image: '/images/tourism1.jpg',
       comingSoon: false
     },
     {
@@ -52,13 +52,13 @@ export default function Home() {
     {
       id: 8,
       name: 'HEALTH CARE',
-      image: '/images/healthcare.jpg',
+      image: '/images/healthcare1.jpg',
       comingSoon: false
     },
     {
       id: 9,
       name: 'SHOPPING',
-      image: '/images/shopping.jpg',
+      image: '/images/shopping1.jpg',
       comingSoon: false
     },
     {
@@ -70,13 +70,13 @@ export default function Home() {
     {
       id: 11,
       name: 'HEALTH CARE',
-      image: '/images/healthcare.jpg',
+      image: '/images/healthcare1.jpg',
       comingSoon: true
     },
     {
       id: 12,
       name: 'SHOPPING',
-      image: '/images/shopping.jpg',
+      image: '/images/shopping1.jpg',
       comingSoon: true
     }
   ];
