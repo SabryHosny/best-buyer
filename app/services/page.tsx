@@ -71,26 +71,26 @@ export default function ServicesPage() {
     const categories = ['All', 'Hotels', 'Trips', 'Transport', 'Tours', 'Events & Festivals'];
 
     return (
-        <main className="min-h-screen">
+        <main className="min-h-screen bg-gray-900">
             <Navbar />
 
             {/* Page Header */}
-            <div className="bg-[#0e3b7c] text-white py-16 px-4">
+            <div className="bg-black text-white py-16 px-4">
                 <div className="max-w-7xl mx-auto text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
-                    <p className="text-xl max-w-3xl mx-auto">Browse our wide range of services and get your personal discount card</p>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-4 text-amber-300">Our Services</h1>
+                    <p className="text-xl max-w-3xl mx-auto text-gray-300">Browse our wide range of services and get your personal discount card</p>
                 </div>
             </div>
 
             {/* Services Section */}
-            <section className="py-16 px-4">
+            <section className="py-16 px-4 bg-gray-800">
                 <div className="max-w-7xl mx-auto">
                     {/* Category Filters */}
                     <div className="mb-12 flex flex-wrap justify-center gap-4">
                         {categories.map((category, index) => (
                             <button
                                 key={index}
-                                className="px-6 py-2 rounded-full border border-[#0e3b7c] text-[#0e3b7c] hover:bg-[#0e3b7c] hover:text-white transition-colors"
+                                className="px-6 py-2 rounded-full border border-amber-300 text-amber-300 hover:bg-amber-300 hover:text-black transition-colors"
                             >
                                 {category}
                             </button>
@@ -100,24 +100,24 @@ export default function ServicesPage() {
                     {/* Services Grid */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service) => (
-                            <div key={service.id} className="bg-white rounded-lg shadow-md overflow-hidden">
-                                <div className="h-48 bg-gray-300 relative">
-                                    <div className="absolute top-0 right-0 bg-[#e91e63] text-white px-3 py-1 rounded-bl-lg font-semibold">
+                            <div key={service.id} className="bg-gray-700 rounded-lg shadow-md overflow-hidden">
+                                <div className="h-48 bg-gray-600 relative">
+                                    <div className="absolute top-0 right-0 bg-amber-300 text-black px-3 py-1 rounded-bl-lg font-semibold">
                                         {service.discount} OFF
                                     </div>
                                 </div>
                                 <div className="p-6">
-                                    <span className="text-sm text-[#0e3b7c] font-medium">{service.category}</span>
-                                    <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
-                                    <p className="text-gray-600 mb-4">{service.description}</p>
+                                    <span className="text-sm text-amber-300 font-medium">{service.category}</span>
+                                    <h3 className="text-xl font-semibold mb-2 text-gray-200">{service.name}</h3>
+                                    <p className="text-gray-400 mb-4">{service.description}</p>
                                     <div className="flex items-center justify-between mb-4">
                                         <div>
-                                            <span className="text-gray-400 line-through mr-2">${service.originalPrice}</span>
-                                            <span className="text-xl font-bold text-[#e91e63]">${service.discountedPrice}</span>
+                                            <span className="text-gray-500 line-through mr-2">${service.originalPrice}</span>
+                                            <span className="text-xl font-bold text-amber-300">${service.discountedPrice}</span>
                                         </div>
                                         <Link
                                             href={`/services/${service.id}`}
-                                            className="text-[#0e3b7c] font-medium hover:text-[#e91e63] flex items-center"
+                                            className="text-amber-300 font-medium hover:text-amber-400 flex items-center"
                                         >
                                             Details
                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
@@ -127,7 +127,7 @@ export default function ServicesPage() {
                                     </div>
                                     <Link
                                         href={`/card/create?service=${service.id}`}
-                                        className="block w-full text-center py-2 bg-[#0e3b7c] text-white rounded-md hover:bg-[#0a2d5e] transition-colors"
+                                        className="block w-full text-center py-2 bg-amber-300 text-black rounded-md hover:bg-amber-400 transition-colors"
                                     >
                                         Get My Card
                                     </Link>
@@ -139,13 +139,13 @@ export default function ServicesPage() {
             </section>
 
             {/* Call to Action */}
-            <section className="py-16 px-4 bg-gray-100">
+            <section className="py-16 px-4 bg-gray-900">
                 <div className="max-w-7xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold mb-4">Don&apos;t see what you&apos;re looking for?</h2>
-                    <p className="text-xl text-gray-600 mb-8">Contact us for custom packages and special requests</p>
+                    <h2 className="text-3xl font-bold mb-4 text-amber-300">Don&apos;t see what you&apos;re looking for?</h2>
+                    <p className="text-xl text-gray-400 mb-8">Contact us for custom packages and special requests</p>
                     <Link
                         href="/contact"
-                        className="inline-block px-8 py-3 bg-[#e91e63] text-white rounded-md hover:bg-[#d81b60] transition-colors"
+                        className="inline-block px-8 py-3 bg-amber-300 text-black rounded-md hover:bg-amber-400 transition-colors"
                     >
                         Contact Us
                     </Link>
