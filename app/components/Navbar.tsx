@@ -33,10 +33,10 @@ export default function Navbar() {
                     {/* Desktop menu */}
                     <div className="hidden lg:flex lg:items-center">
                         <div className="flex flex-wrap space-x-1 lg:space-x-2">
-                            <Link href="/" className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-colors duration-200 rounded-md whitespace-nowrap">
+                            <Link href="/" className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 rounded-md whitespace-nowrap">
                                 Home
                             </Link>
-                            <Link href="/services" className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-colors duration-200 rounded-md whitespace-nowrap">
+                            <Link href="/services" className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 rounded-md whitespace-nowrap">
                                 All-Services
                             </Link>
 
@@ -55,7 +55,7 @@ export default function Navbar() {
                                     }, 100);
                                 }}
                             >
-                                <button className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-colors duration-200 flex items-center rounded-md">
+                                <button className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center rounded-md">
                                     About
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -63,10 +63,10 @@ export default function Navbar() {
                                 </button>
                                 {isAboutOpen && (
                                     <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 transition-all duration-300 ease-in-out transform origin-top-left">
-                                        <Link href="/about" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/about" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             About us
                                         </Link>
-                                        <Link href="/financial-protection" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/financial-protection" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Financial Protection
                                         </Link>
                                     </div>
@@ -88,7 +88,7 @@ export default function Navbar() {
                                     }, 100);
                                 }}
                             >
-                                <button className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-colors duration-200 flex items-center rounded-md">
+                                <button className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center rounded-md">
                                     Destinations
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -96,25 +96,25 @@ export default function Navbar() {
                                 </button>
                                 {isDestinationsOpen && (
                                     <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 transition-all duration-300 ease-in-out transform origin-top-left">
-                                        <Link href="/destinations/egypt" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/destinations/egypt" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Egypt
                                         </Link>
-                                        <Link href="/destinations/colombia" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/destinations/colombia" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Colombia
                                         </Link>
-                                        <Link href="/destinations" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/destinations" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             All Destinations
                                         </Link>
-                                        <Link href="/destinations/costa-rica" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/destinations/costa-rica" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Costa Rica
                                         </Link>
-                                        <Link href="/destinations/mexico" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/destinations/mexico" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Mexico
                                         </Link>
-                                        <Link href="/destinations/peru" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/destinations/peru" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Peru
                                         </Link>
-                                        <Link href="/destinations/turkey" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/destinations/turkey" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Turkey
                                         </Link>
                                     </div>
@@ -136,7 +136,7 @@ export default function Navbar() {
                                     }, 100);
                                 }}
                             >
-                                <button className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-colors duration-200 flex items-center rounded-md">
+                                <button className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center rounded-md">
                                     Inspiration
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -144,22 +144,22 @@ export default function Navbar() {
                                 </button>
                                 {isInspirationOpen && (
                                     <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 transition-all duration-300 ease-in-out transform origin-top-left">
-                                        <Link href="/inspiration/beach-stay" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/inspiration/beach-stay" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Beach Stay
                                         </Link>
-                                        <Link href="/inspiration/city-break" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/inspiration/city-break" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             City Break
                                         </Link>
-                                        <Link href="/inspiration/cruises" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/inspiration/cruises" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Cruises
                                         </Link>
-                                        <Link href="/inspiration/cultural-historic" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/inspiration/cultural-historic" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Cultural & Historic
                                         </Link>
-                                        <Link href="/inspiration/nature" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/inspiration/nature" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Nature
                                         </Link>
-                                        <Link href="/inspiration" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                        <Link href="/inspiration" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             All Inspiration
                                         </Link>
                                     </div>
