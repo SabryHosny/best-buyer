@@ -3,8 +3,7 @@
 import Link from 'next/link';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-
-import { categories } from './components/CategoriesData';
+import { categories } from './lib/categories';
 export default function Home() {
 
   // Testimonials data removed
@@ -131,7 +130,7 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Join today and get your personal card for free!</h2>
           <Link
             href="/get-card"
-            className="inline-block px-8 py-4 bg-white text-[#0e3b7c] hover:bg-gray-100 rounded-full text-lg font-semibold transition-colors"
+            className="inline-block px-8 py-4 bg-white text-[#0e3b7c] hover:bg-amber-300 hover:text-black hover:shadow-[0_0_15px_5px_rgba(255,193,7,0.5)] rounded-full text-lg font-semibold transition-all duration-300 transform hover:-translate-y-1"
           >
             Get Card
           </Link>

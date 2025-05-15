@@ -143,8 +143,8 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold mb-1 text-gray-300">Phone</h3>
-                                        <p className="text-gray-400">+20 1009966188</p>
                                         <p className="text-gray-400">+20 1155538363</p>
+                                        <p className="text-gray-400">+20 1009966188</p>
                                         <hr className="my-2 border-gray-600" />
                                         <p className="text-gray-400">+20 1006631686</p>
                                         <p className="text-gray-400">+20 1150107005</p>
