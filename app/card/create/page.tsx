@@ -2,6 +2,7 @@
 
 import { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
@@ -41,14 +42,22 @@ function CreateCardPageContent() {
     const [cardData, setCardData] = useState<CardData | null>(null);
 
     // Sample service data - in a real app, this would be fetched from an API
-    const service = {
+    const [service, setService] = useState({
         id: serviceId || '1',
         name: 'Luxury Hotel Stay',
         discount: '30%',
-        expiryDate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toLocaleDateString(), // 30 days from now
+        expiryDate: '', // Will be set in useEffect
         image: '/images/hotel-luxury.jpg',
         description: 'Experience 5-star luxury accommodations with exclusive amenities'
-    };
+    });
+
+
+    useEffect(() => {
+        setService(prev => ({
+            ...prev,
+            expiryDate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toLocaleDateString()
+        }));
+    }, []);
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;

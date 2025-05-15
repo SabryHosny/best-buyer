@@ -113,7 +113,7 @@ export default function ContactPage() {
                                     <textarea
                                         id="message"
                                         name="message"
-                                        rows={5}
+                                        rows={8}
                                         value={formData.message}
                                         onChange={handleInputChange}
                                         required
@@ -143,8 +143,13 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold mb-1 text-gray-300">Phone</h3>
-                                        <p className="text-gray-400">+1 (555) 123-4567</p>
-                                        <p className="text-gray-400">+1 (555) 987-6543</p>
+                                        <p className="text-gray-400">+20 1009966188</p>
+                                        <p className="text-gray-400">+20 1155538363</p>
+                                        <hr className="my-2 border-gray-600" />
+                                        <p className="text-gray-400">+20 1006631686</p>
+                                        <p className="text-gray-400">+20 1150107005</p>
+                                        <p className="text-gray-400">+20 1150104008</p>
+                                        <p className="text-gray-400">+20 1107902151</p>
                                     </div>
                                 </div>
 
@@ -170,9 +175,9 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold mb-1 text-gray-300">Address</h3>
-                                        <p className="text-gray-400">123 Buyer Avenue</p>
-                                        <p className="text-gray-400">Travel City, TC 12345</p>
-                                        <p className="text-gray-400">United States</p>
+                                        <p className="text-gray-400">97 Misr Helwan Agricultural Rd,</p>
+                                        <p className="text-gray-400">Behind Armed Forces Hospital,</p>
+                                        <p className="text-gray-400">Maadi, Cairo, Egypt.</p>
                                     </div>
                                 </div>
 
@@ -184,9 +189,10 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold mb-1 text-gray-300">Business Hours</h3>
-                                        <p className="text-gray-400">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                                        <p className="text-gray-400">Saturday: 10:00 AM - 4:00 PM</p>
-                                        <p className="text-gray-400">Sunday: Closed</p>
+                                        <p className="text-gray-400">Open from Saturday to Thursday, excluding Friday</p>
+                                        <hr className="my-2 border-gray-600" />
+                                        <p className="text-gray-400">Saturday - Thursday: 9:00 AM - 9:00 PM</p>
+                                        <p className="text-gray-400">Friday: Closed</p>
                                     </div>
                                 </div>
                             </div>
@@ -200,7 +206,14 @@ export default function ContactPage() {
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-2xl font-bold mb-6 text-amber-300">Find Us on the Map</h2>
                     <div className="bg-gray-800 h-96 rounded-lg flex items-center justify-center">
-                        <p className="text-gray-500">Google Map would be embedded here</p>
+                        <iframe
+                            className="w-full h-full rounded-lg"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1135.5281678379965!2d31.32826398696489!3d30.08749743247899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e21f28cf1d7%3A0x30bcfb14f962d52c!2sBaron%20Empain%20Palace!5e0!3m2!1sen!2seg!4v1747236772621!5m2!1sen!2seg"
+                            style={{ border: 0 }}
+                            allowFullScreen
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
                     </div>
                 </div>
             </section>

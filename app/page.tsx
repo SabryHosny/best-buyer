@@ -4,82 +4,8 @@ import Link from 'next/link';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+import { categories } from './components/CategoriesData';
 export default function Home() {
-  // Category data
-  const categories = [
-    {
-      id: 1,
-      name: 'DIVING',
-      image: '/images/diving.jpg',
-      comingSoon: false
-    },
-    {
-      id: 2,
-      name: 'TRAVEL',
-      image: '/images/travel.jpg',
-      comingSoon: false
-    },
-    {
-      id: 3,
-      name: 'PRIVATE PLANES',
-      image: '/images/private-planes.jpg',
-      comingSoon: false
-    },
-    {
-      id: 4,
-      name: 'RESTAURANT',
-      image: '/images/restaurant.jpg',
-      comingSoon: false
-    },
-    {
-      id: 5,
-      name: 'TOURISM',
-      image: '/images/tourism1.jpg',
-      comingSoon: false
-    },
-    {
-      id: 6,
-      name: 'ENTERTAINMENT',
-      image: '/images/entertainment.jpg',
-      comingSoon: false
-    },
-    {
-      id: 7,
-      name: 'BEAUTY SALONS',
-      image: '/images/beauty-salons.jpg',
-      comingSoon: false
-    },
-    {
-      id: 8,
-      name: 'HEALTH CARE',
-      image: '/images/healthcare1.jpg',
-      comingSoon: false
-    },
-    {
-      id: 9,
-      name: 'SHOPPING',
-      image: '/images/shopping1.jpg',
-      comingSoon: false
-    },
-    {
-      id: 10,
-      name: 'BEAUTY SALONS',
-      image: '/images/beauty-salons.jpg',
-      comingSoon: true
-    },
-    {
-      id: 11,
-      name: 'HEALTH CARE',
-      image: '/images/healthcare1.jpg',
-      comingSoon: true
-    },
-    {
-      id: 12,
-      name: 'SHOPPING',
-      image: '/images/shopping1.jpg',
-      comingSoon: true
-    }
-  ];
 
   // Testimonials data removed
 
@@ -123,7 +49,7 @@ export default function Home() {
                     </div>
                   ) : (
                     <Link
-                      href={`/services?category=${category.id}`}
+                      href={`/categories/${category.id}`}
                       className="absolute inset-0 flex items-center justify-center"
                     >
                       {/* Tourism content can go here */}
