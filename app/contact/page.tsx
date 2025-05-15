@@ -161,8 +161,8 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold mb-1 text-gray-300">Email</h3>
-                                        <p className="text-gray-400">info@bestbuyer.com</p>
-                                        <p className="text-gray-400">support@bestbuyer.com</p>
+                                        <p className="text-gray-400">info@bestbuyerss.com</p>
+                                        <p className="text-gray-400">support@bestbuyerss.com</p>
                                     </div>
                                 </div>
 

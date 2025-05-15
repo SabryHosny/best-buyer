@@ -21,7 +21,7 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
                         <ul className="space-y-2 text-gray-400">
-                            <li>Email: info@bestbuyer.com</li>
+                            <li>Email: info@bestbuyerss.com</li>
                             <li>Phone: +20 1155538363</li>
                             <li>Phone: +20 1009966188</li>
                             <li>Address: 97 A. Misr Helwan Agricultural Road, Behind Armed Forces Hospital, Maadi, Cairo, Egypt</li>
