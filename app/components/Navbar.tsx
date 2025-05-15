@@ -31,10 +31,13 @@ export default function Navbar() {
                     </div>
 
                     {/* Desktop menu */}
-                    <div className="hidden md:flex md:items-center">
+                    <div className="hidden lg:flex lg:items-center">
                         <div className="flex flex-wrap space-x-1 lg:space-x-2">
                             <Link href="/" className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-colors duration-200 rounded-md whitespace-nowrap">
                                 Home
+                            </Link>
+                            <Link href="/services" className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-colors duration-200 rounded-md whitespace-nowrap">
+                                Services
                             </Link>
 
                             {/* About dropdown */}
@@ -165,7 +168,7 @@ export default function Navbar() {
                         </div>
 
                         <div className="ml-2 lg:ml-4 flex items-center">
-                            <div className="hidden lg:flex flex-col items-start border-l border-gray-400 pl-4 ml-4">
+                            <div className="hidden xl:flex flex-col items-start border-l border-gray-400 pl-4 ml-4">
                                 <span className="text-white text-[10px] md:text-xs mr-2">+20 1009966188</span>
                                 <span className="text-white text-[10px] md:text-xs mr-2">+20 1155538363</span>
                             </div>
@@ -194,7 +197,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Mobile menu button */}
-                    <div className="-mr-2 flex items-center md:hidden">
+                    <div className="-mr-2 flex items-center lg:hidden">
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
                             className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-gray-300 hover:bg-[#0a2d5e] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
