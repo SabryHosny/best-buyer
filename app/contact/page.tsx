@@ -208,7 +208,7 @@ export default function ContactPage() {
                     <div className="bg-gray-800 h-96 rounded-lg flex items-center justify-center">
                         <iframe
                             className="w-full h-full rounded-lg"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1135.5281678379965!2d31.32826398696489!3d30.08749743247899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583e21f28cf1d7%3A0x30bcfb14f962d52c!2sBaron%20Empain%20Palace!5e0!3m2!1sen!2seg!4v1747236772621!5m2!1sen!2seg"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.3868777337607!2d31.2480669!3d29.968309699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847932898c989%3A0x9d5bb514bd31e475!2z2K7ZhNmBINin2YTZhdis2YXYuSDYp9mE2LfYqNmKINin2YTYudiz2YPYsdmK2IwgOTfYoyBNaXNyIEhlbHdhbiBBZ3JpY3VsdHVyZSBSZNiMINit2K_Yp9im2YIsIE1hYWRpLCBDYWlybyBHb3Zlcm5vcmF0ZSA0MjExMzEw!5e0!3m2!1sen!2seg!4v1747348183379!5m2!1sen!2seg"
                             style={{ border: 0 }}
                             allowFullScreen
                             loading="lazy"
