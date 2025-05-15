@@ -47,11 +47,11 @@ export default async function CategoryPage({ params }: { params: Promise<{ id: s
 
                     {/* Buttons */}
                     <div className="mt-8 flex justify-center gap-6 p-6 bg-gradient-to-r from-yellow-500/20 via-yellow-600/20 to-yellow-700/20 border-2 border-yellow-500 rounded-lg shadow-[0_0_20px_5px_rgba(234,179,8,0.3)] w-fit mx-auto">
-                        <Link href="/get-card" className="px-10 py-4 text-base font-medium text-white bg-[#e91e63] rounded-md hover:bg-[#d81b60] transition-colors">
+                        <Link href="/get-card" className="px-10 py-4 text-base font-medium text-white bg-[#e91e63] rounded-md hover:bg-[#ffc107] hover:text-black hover:shadow-[0_0_15px_5px_rgba(255,193,7,0.5)] transition-all duration-300 transform hover:-translate-y-0.5">
                             Get Card
                         </Link>
-                        <Link href="/contact" className="px-10 py-4 text-base font-medium text-white bg-[#0a2d5e] rounded-md hover:bg-[#072348] transition-colors">
-                            Contact
+                        <Link href="/contact" className="px-10 py-4 text-base font-medium text-white bg-[#0a2d5e] rounded-md hover:bg-amber-300 hover:text-black transition-colors">
+                            CONTACT
                         </Link>
                     </div>
                 </div>
