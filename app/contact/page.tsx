@@ -175,7 +175,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold mb-1 text-gray-300">Address</h3>
-                                        <p className="text-gray-400">97 Misr Helwan Agricultural Rd,</p>
+                                        <p className="text-gray-400">97 A. Misr Helwan Agricultural Rd,</p>
                                         <p className="text-gray-400">Behind Armed Forces Hospital,</p>
                                         <p className="text-gray-400">Maadi, Cairo, Egypt.</p>
                                     </div>

@@ -37,7 +37,7 @@ export default function Navbar() {
                                 Home
                             </Link>
                             <Link href="/services" className="px-2 lg:px-3 py-2 text-sm font-medium text-white hover:bg-amber-300 hover:text-black transition-colors duration-200 rounded-md whitespace-nowrap">
-                                Services
+                                All-Services
                             </Link>
 
                             {/* About dropdown */}
@@ -169,8 +169,8 @@ export default function Navbar() {
 
                         <div className="ml-2 lg:ml-4 flex items-center">
                             <div className="hidden xl:flex flex-col items-start border-l border-gray-400 pl-4 ml-4">
-                                <span className="text-white text-[10px] md:text-xs mr-2">+20 1009966188</span>
                                 <span className="text-white text-[10px] md:text-xs mr-2">+20 1155538363</span>
+                                <span className="text-white text-[10px] md:text-xs mr-2">+20 1009966188</span>
                             </div>
 
                             {isLoggedIn ? (

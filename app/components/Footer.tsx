@@ -24,7 +24,7 @@ export default function Footer() {
                             <li>Email: info@bestbuyer.com</li>
                             <li>Phone: +20 1155538363</li>
                             <li>Phone: +20 1009966188</li>
-                            <li>Address: 97 Misr Helwan Agricultural Road, Behind Armed Forces Hospital, Maadi, Cairo, Egypt</li>
+                            <li>Address: 97 A. Misr Helwan Agricultural Road, Behind Armed Forces Hospital, Maadi, Cairo, Egypt</li>
                         </ul>
                     </div>
                     <div>
