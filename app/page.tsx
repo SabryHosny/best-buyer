@@ -13,11 +13,15 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Banner */}
-      <div className="relative h-[70vh] bg-black text-white">
-        <div className="absolute inset-0 bg-gray-900 opacity-80"></div>
+      <div className="relative h-[70vh] bg-black text-white overflow-hidden">
+        <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover opacity-70">
+          <source src="/videos/heroVideo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="absolute inset-0 bg-gray-900 opacity-30"></div>
         <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-3xl md:text-5xl font-extrabold mb-6 text-amber-300">EXPLORE THE WORLD AT THE BEST PRICES!</h1>
-          <p className="text-lg md:text-xl mb-8 max-w-3xl text-gray-400 font-semibold">Get exclusive discounts on travel and tourism services with your personal card</p>
+          <p className="text-lg md:text-xl mb-8 max-w-3xl text-gray-400 font-semibold">Get exclusive discounts on tourism services with your <Link href="/get-card" className="p-1.5 text-gray-50 uppercase hover:text-amber-300">personal_card</Link></p>
           <Link
             href="#categories"
             className="px-8 py-4 bg-amber-300 hover:bg-amber-400 text-black rounded-full text-lg font-semibold transition-colors"

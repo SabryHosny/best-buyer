@@ -1,6 +1,7 @@
 'use client';
 import { useState, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,10 +22,13 @@ export default function Navbar() {
                     <div className="flex">
                         <div className="flex-shrink-0 flex items-center">
                             <Link href="/" className="focus:outline-none">
-                                <img
+                                <Image
                                     src="/images/logo.png"
                                     alt="Best Buyer Logo"
+                                    width={160}
+                                    height={64}
                                     className="h-10 sm:h-12 md:h-16 w-auto transition-all duration-300"
+                                    priority
                                 />
                             </Link>
                         </div>

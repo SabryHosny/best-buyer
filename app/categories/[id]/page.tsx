@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import ClientNavbar from '../../components/ClientNavbar';
 import Footer from '../../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { categories } from '../../lib/categories';
 import type { JSX } from 'react';
 
@@ -30,9 +31,11 @@ export default async function CategoryPage({ params }: { params: Promise<{ id: s
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                         {category.images?.map((image: string, index: number) => (
                             <div key={index} className="h-64 bg-gray-700 rounded-lg overflow-hidden">
-                                <img
+                                <Image
                                     src={image}
                                     alt={`${category.name} ${index + 1}`}
+                                    width={500}
+                                    height={300}
                                     className="w-full h-full object-cover"
                                 />
                             </div>
