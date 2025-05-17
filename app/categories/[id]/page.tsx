@@ -6,6 +6,13 @@ import Image from 'next/image';
 import { categories } from '../../lib/categories';
 import type { JSX } from 'react';
 
+// Generate static paths for all categories
+export function generateStaticParams() {
+    return categories.map((category) => ({
+        id: category.id.toString(),
+    }));
+}
+
 // Server component (no 'use client' directive)
 export default async function CategoryPage({ params }: { params: Promise<{ id: string }> }): Promise<JSX.Element> {
     // Get the id from params and find the category
@@ -37,6 +44,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ id: s
                                     width={500}
                                     height={300}
                                     className="w-full h-full object-cover"
+                                    unoptimized
                                 />
                             </div>
                         ))}

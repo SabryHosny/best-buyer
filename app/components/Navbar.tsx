@@ -29,6 +29,7 @@ export default function Navbar() {
                                     height={64}
                                     className="h-10 sm:h-12 md:h-16 w-auto transition-all duration-300"
                                     priority
+                                    unoptimized
                                 />
                             </Link>
                         </div>

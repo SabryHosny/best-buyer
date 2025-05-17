@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { categories } from './lib/categories';
@@ -38,7 +39,15 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {categories.map((category) => (
               <div key={category.id} className="bg-gray-700 rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-                <div className="h-64 relative" style={{ backgroundImage: `url(${category.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <div className="h-64 relative overflow-hidden">
+                  <Image
+                    src={category.image}
+                    alt={category.name}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    className="object-cover"
+                    priority={category.id <= 3}
+                  />
                   <h3 className="absolute top-0 left-0 w-full text-center py-4 text-yellow-300 font-bold text-xl drop-shadow-[0_0_8px_rgba(255,255,0,0.8)] animate-pulse bg-black/50">{category.name}</h3>
 
                   {category.comingSoon ? (
