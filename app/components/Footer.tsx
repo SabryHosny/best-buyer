@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
     return (
@@ -8,6 +9,15 @@ export default function Footer() {
                     <div>
                         <h3 className="text-xl font-semibold mb-4">Best Buyer</h3>
                         <p className="text-gray-400">Explore the world at the best prices with our exclusive discount cards.</p>
+                        <div className="mt-6">
+                            <Image
+                                src="/images/logo.png"
+                                alt="Best Buyer Logo"
+                                width={100}
+                                height={50}
+                                className="object-contain hover:opacity-90 transition-opacity"
+                            />
+                        </div>
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold mb-4">Quick Links</h3>

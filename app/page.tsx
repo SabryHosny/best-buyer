@@ -2,19 +2,30 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { categories } from './lib/categories';
 export default function Home() {
 
-  // Testimonials data removed
+  // Initialize AOS animation library
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out',
+      once: true,
+      offset: 50,
+    });
+  }, []);
 
   return (
     <main className="min-h-screen bg-gray-900">
       <Navbar />
 
       {/* Hero Banner */}
-      <div className="relative h-[70vh] bg-black text-white overflow-hidden">
+      <div className="relative h-[calc(100vh-6rem)] bg-black text-white overflow-hidden">
         <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover opacity-70">
           <source src="/videos/heroVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -31,6 +42,101 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
+      {/* Promotional Banner */}
+      <section className="py-16 md:py-24 px-4 bg-[#0e3b7c] text-white">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-12 w-full">
+          <div className="w-full md:w-1/2 flex flex-col items-center justify-center py-8">
+            <div className="text-center mb-8 max-w-lg">
+              <h2
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="text-3xl md:text-5xl font-medium mb-6"
+              >
+                SAVE UP TO <span className="inline-block bg-[#e74c3c] px-4 py-2 text-white font-extrabold">25%</span>
+              </h2>
+              <h2
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="text-3xl md:text-5xl font-medium mb-6"
+              >
+                IN MORE THAN
+              </h2>
+              <h2
+                data-aos="fade-up"
+                data-aos-delay="300"
+                className="text-2xl md:text-4xl font-extralight mb-6"
+              >
+                <span className="inline-block bg-[#e74c3c] px-4 py-2 text-white font-extrabold">3,000</span> PLACES IN EGYPT
+              </h2>
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="400"
+              className="flex flex-col sm:flex-row gap-4 w-full max-w-md"
+            >
+              <Link href="/get-card" className="bg-[#e74c3c] text-white font-bold py-3 px-8 rounded-md text-center flex-1 transition-all duration-300 hover:text-gray-800 hover:bg-gradient-to-r hover:from-amber-200 hover:to-amber-300 hover:shadow-[0_0_15px_rgba(231,76,60,0.7)] hover:scale-105 hover:translate-y-[-3px] relative overflow-hidden group">
+                <span className="relative z-10">GET THE CARD</span>
+                <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-300 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
+              </Link>
+              <Link href="/download-app" className="bg-[#1e3a8a] text-white font-bold py-3 px-8 rounded-md border-2 border-white text-center flex-1 transition-all duration-300 hover:bg-gradient-to-r hover:from-blue-800 hover:to-blue-700 hover:border-amber-300 hover:shadow-[0_0_15px_rgba(30,58,138,0.7)] hover:scale-105 hover:translate-y-[-3px] relative overflow-hidden group">
+                <span className="relative z-10">DOWNLOAD THE APP</span>
+                <span className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-300 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></span>
+              </Link>
+            </div>
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              className="relative w-full h-64 mt-10"
+            >
+              <Image
+                src="/images/Card-2.png"
+                alt="Xclusives Card"
+                fill
+                className="object-contain"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+          </div>
+          <div className="w-full md:w-1/2 flex flex-col justify-start py-6 px-4 sm:px-6 md:py-8 md:px-0">
+            <div className="space-y-4 sm:space-y-6 max-w-xl mx-auto md:mx-0">
+              <h2
+                data-aos="fade-left"
+                data-aos-delay="100"
+                className="text-2xl sm:text-3xl font-bold leading-tight"
+              >
+                Best Buyers Card – Your Passport to Explore the World
+              </h2>
+              <p
+                data-aos="fade-left"
+                data-aos-delay="200"
+                className="text-base sm:text-lg"
+              >
+                Turn your next vacation into the trip of a lifetime with the Best Buyers Card. Enjoy exclusive discounts of up to 50% on all your travel needs — from luxurious hotels and exciting cruises to private planes and serene yacht rentals.
+              </p>
+              <ul
+                data-aos="fade-left"
+                data-aos-delay="300"
+                className="list-disc pl-5 sm:pl-6 space-y-2 sm:space-y-3 text-sm sm:text-base"
+              >
+                <li><span className="font-medium">Hotels:</span> Find accommodations that perfectly match your style and budget.</li>
+                <li><span className="font-medium">Flights:</span> Book affordable airfare to your dream destinations.</li>
+                <li><span className="font-medium">Visas:</span> Enjoy hassle-free visa assistance to simplify your travel planning.</li>
+                <li><span className="font-medium">Cruises & Yachts:</span> Embark on unforgettable adventures across the seas.</li>
+                <li><span className="font-medium">Private Planes:</span> Travel in style and comfort with exclusive private jet deals.</li>
+              </ul>
+              <p
+                data-aos="fade-left"
+                data-aos-delay="400"
+                className="text-base sm:text-lg font-medium"
+              >
+                Explore the world with confidence — only with Best Buyers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Save More With Us */}
       <section id="categories" className="py-16 px-4 bg-gray-800">
@@ -151,6 +257,6 @@ export default function Home() {
       </section>
 
       <Footer />
-    </main>
+    </main >
   );
 }

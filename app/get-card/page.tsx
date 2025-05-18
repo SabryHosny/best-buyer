@@ -15,7 +15,8 @@ export default function GetCardPage() {
         const message = `Hello! I would like to get a discount card. My details:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}`;
 
         // Create WhatsApp URL with the message
-        const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/+201009966188?text=${encodeURIComponent(message)}`;
+
 
         // Open WhatsApp in a new tab
         window.open(whatsappUrl, '_blank');
