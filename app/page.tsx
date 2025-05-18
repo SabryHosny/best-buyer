@@ -51,9 +51,11 @@ export default function Home() {
               <h2
                 data-aos="fade-up"
                 data-aos-delay="100"
-                className="text-3xl md:text-5xl font-medium mb-6"
+                className="text-3xl md:text-5xl font-medium mb-6 flex flex-wrap items-center justify-center gap-2 gap-y-4"
               >
-                SAVE UP TO <span className="inline-block bg-[#e74c3c] px-4 py-2 text-white font-extrabold">25%</span>
+                {/* SAVE UP TO <span className="inline-block bg-[#e74c3c] px-4 py-2 text-white font-extrabold">25%</span> */}
+                <span className="mr-2 text-3xl md:text-5xl  whitespace-nowrap">SAVE UP TO</span>
+                <span className="inline-block bg-[#e74c3c] px-5 py-2 text-white font-extrabold text-3xl md:text-5xl whitespace-nowrap min-w-[90px] text-center">25%</span>
               </h2>
               <h2
                 data-aos="fade-up"
@@ -65,9 +67,10 @@ export default function Home() {
               <h2
                 data-aos="fade-up"
                 data-aos-delay="300"
-                className="text-2xl md:text-4xl font-extralight mb-6"
+                className="text-2xl md:text-4xl font-extralight mb-6 flex flex-wrap items-center justify-center gap-2 gap-y-4"
               >
-                <span className="inline-block bg-[#e74c3c] px-4 py-2 text-white font-extrabold">3,000</span> PLACES IN EGYPT
+                <span className="inline-block bg-[#e74c3c] px-5 py-2 text-white font-extrabold text-2xl md:text-4xl whitespace-nowrap min-w-[90px] text-center">5,000</span>
+                <span className="ml-2 text-base md:text-2xl  whitespace-nowrap">PLACES IN/OUT EGYPT</span>
               </h2>
             </div>
             <div
