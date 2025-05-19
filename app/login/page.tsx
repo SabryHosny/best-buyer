@@ -144,7 +144,7 @@ export default function LoginPage() {
 
                     <div className="mt-6 text-center">
                         <p className="text-gray-600">
-                            {isLogin ? "Don't have an account?" : 'Already have an account?'}
+                            {isLogin ? "Don&apos;t have an account?" : 'Already have an account?'}
                             <button
                                 type="button"
                                 onClick={toggleForm}

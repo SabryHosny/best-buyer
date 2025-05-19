@@ -59,7 +59,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
-                    <p>© 2025 Best Buyer. All rights reserved.</p>
+                    <p>© 2015 Best Buyer. All rights reserved.</p>
                 </div>
             </div>
         </footer>
