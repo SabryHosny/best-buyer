@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* Hero Banner */}
       <div className="relative h-[calc(100vh-6rem)] bg-black text-white overflow-hidden">
-        <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover opacity-70">
+        <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover opacity-45">
           <source src="/videos/heroVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
