@@ -101,14 +101,14 @@ export default function Navbar() {
                                 </button>
                                 {isDestinationsOpen && (
                                     <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10 transition-all duration-300 ease-in-out transform origin-top-left">
+                                        <Link href="/destinations" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
+                                            All Destinations
+                                        </Link>
                                         <Link href="/destinations/egypt" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Egypt
                                         </Link>
                                         <Link href="/destinations/colombia" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Colombia
-                                        </Link>
-                                        <Link href="/destinations" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
-                                            All Destinations
                                         </Link>
                                         <Link href="/destinations/costa-rica" className="block px-4 py-2 text-sm text-gray-700 hover:bg-amber-300 hover:text-black transition-all duration-300 ease-in-out transform hover:scale-105">
                                             Costa Rica
@@ -267,14 +267,14 @@ export default function Navbar() {
                         </button>
                         {isDestinationsOpen && (
                             <div className="mt-2 pl-4 border-l-2 border-gray-500 transition-all duration-300 ease-in-out">
+                                <Link href="/destinations" className="block py-2 text-sm text-gray-300 hover:bg-amber-300 hover:text-black transition-colors duration-200">
+                                    All Destinations
+                                </Link>
                                 <Link href="/destinations/egypt" className="block py-2 text-sm text-gray-300 hover:bg-amber-300 hover:text-black transition-colors duration-200">
                                     Egypt
                                 </Link>
                                 <Link href="/destinations/colombia" className="block py-2 text-sm text-gray-300 hover:bg-amber-300 hover:text-black transition-colors duration-200">
                                     Colombia
-                                </Link>
-                                <Link href="/destinations" className="block py-2 text-sm text-gray-300 hover:bg-amber-300 hover:text-black transition-colors duration-200">
-                                    All Destinations
                                 </Link>
                                 <Link href="/destinations/costa-rica" className="block py-2 text-sm text-gray-300 hover:bg-amber-300 hover:text-black transition-colors duration-200">
                                     Costa Rica
