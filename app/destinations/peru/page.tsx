@@ -62,9 +62,9 @@ export default function PeruPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div className="lg:col-span-2 space-y-6">
                             <h2 className="text-3xl font-bold text-[#0e3b7c]">Land of the Incas</h2>
-                            <p className="text-gray-700">Peru is a country in South America that's home to a section of Amazon rainforest and Machu Picchu, an ancient Incan city high in the Andes mountains. The region around Machu Picchu, including the Sacred Valley, Inca Trail and colonial city of Cusco, is rich in archaeological sites.</p>
+                            <p className="text-gray-700">Peru is a country in South America that&apos;s home to a section of Amazon rainforest and Machu Picchu, an ancient Incan city high in the Andes mountains. The region around Machu Picchu, including the Sacred Valley, Inca Trail and colonial city of Cusco, is rich in archaeological sites.</p>
 
-                            <p className="text-gray-700">On Peru's arid Pacific coast is Lima, the capital, with a preserved colonial center and important collections of pre-Columbian art. The country's diverse landscape encompasses tropical Amazon jungle, the arid coastal desert, and the rugged peaks of the Andes.</p>
+                            <p className="text-gray-700">On Peru&apos;s arid Pacific coast is Lima, the capital, with a preserved colonial center and important collections of pre-Columbian art. The country&apos;s diverse landscape encompasses tropical Amazon jungle, the arid coastal desert, and the rugged peaks of the Andes.</p>
 
                             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-6">
                                 <h3 className="font-bold text-yellow-800">Best Time to Visit</h3>

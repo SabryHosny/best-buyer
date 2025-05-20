@@ -62,13 +62,13 @@ export default function EgyptPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div className="lg:col-span-2 space-y-6">
                             <h2 className="text-3xl font-bold text-[#0e3b7c]">The Land of Pharaohs</h2>
-                            <p className="text-gray-700">Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs. Millennia-old monuments sit along the fertile Nile River Valley, including Giza's colossal Pyramids and Great Sphinx as well as Luxor's hieroglyph-lined Karnak Temple and Valley of the Kings tombs.</p>
+                            <p className="text-gray-700">Egypt, a country linking northeast Africa with the Middle East, dates to the time of the pharaohs. Millennia-old monuments sit along the fertile Nile River Valley, including Giza&apos;s colossal Pyramids and Great Sphinx as well as Luxor&apos;s hieroglyph-lined Karnak Temple and Valley of the Kings tombs.</p>
 
                             <p className="text-gray-700">The capital, Cairo, is home to Ottoman landmarks like Muhammad Ali Mosque and the Egyptian Museum, a trove of antiquities. With its rich cultural heritage, stunning landscapes, and warm hospitality, Egypt offers an unforgettable travel experience.</p>
 
                             <div className="bg-amber-50 border-l-4 border-amber-400 p-4 my-6">
                                 <h3 className="font-bold text-amber-800">Best Time to Visit</h3>
-                                <p className="text-amber-700">October to April offers the most pleasant temperatures for exploring Egypt's treasures.</p>
+                                <p className="text-amber-700">October to April offers the most pleasant temperatures for exploring Egypt&apos;s treasures.</p>
                             </div>
                         </div>
 
@@ -97,7 +97,7 @@ export default function EgyptPage() {
                                 </li>
                                 <li className="flex items-start">
                                     <span className="text-[#e91e63] mr-2">✦</span>
-                                    <span>Experience Cairo's vibrant culture</span>
+                                    <span>Experience Cairo&apos;s vibrant culture</span>
                                 </li>
                             </ul>
 

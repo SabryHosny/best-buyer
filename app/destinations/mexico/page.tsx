@@ -62,13 +62,13 @@ export default function MexicoPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div className="lg:col-span-2 space-y-6">
                             <h2 className="text-3xl font-bold text-[#0e3b7c]">Land of Diversity</h2>
-                            <p className="text-gray-700">Mexico is a country between the U.S. and Central America that's known for its Pacific and Gulf of Mexico beaches and its diverse landscape of mountains, deserts and jungles. Ancient ruins such as Teotihuacán and the Mayan city of Chichén Itzá are scattered throughout the country.</p>
+                            <p className="text-gray-700">Mexico is a country between the U.S. and Central America that&apos;s known for its Pacific and Gulf of Mexico beaches and its diverse landscape of mountains, deserts and jungles. Ancient ruins such as Teotihuacán and the Mayan city of Chichén Itzá are scattered throughout the country.</p>
 
                             <p className="text-gray-700">Mexico City, the capital, is known for its 13th-century Aztec temple, the baroque Catedral Metropolitana de México, and the Palacio Nacional, which houses historic murals by Diego Rivera. With its rich cultural heritage, delicious cuisine, and warm hospitality, Mexico offers an unforgettable travel experience.</p>
 
                             <div className="bg-red-50 border-l-4 border-red-400 p-4 my-6">
                                 <h3 className="font-bold text-red-800">Best Time to Visit</h3>
-                                <p className="text-red-700">November to April offers dry, pleasant weather for exploring Mexico's diverse attractions.</p>
+                                <p className="text-red-700">November to April offers dry, pleasant weather for exploring Mexico&apos;s diverse attractions.</p>
                             </div>
                         </div>
 

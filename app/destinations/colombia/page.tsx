@@ -62,13 +62,13 @@ export default function ColombiaPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                         <div className="lg:col-span-2 space-y-6">
                             <h2 className="text-3xl font-bold text-[#0e3b7c]">The Heart of South America</h2>
-                            <p className="text-gray-700">Colombia is a country at the northern tip of South America. It's landscape is marked by rainforests, Andes mountains and numerous coffee plantations. In the high-altitude capital, Bogotá, the Zona Rosa district is known for its restaurants and shops.</p>
+                            <p className="text-gray-700">Colombia is a country at the northern tip of South America. It&apos;s landscape is marked by rainforests, Andes mountains and numerous coffee plantations. In the high-altitude capital, Bogotá, the Zona Rosa district is known for its restaurants and shops.</p>
 
-                            <p className="text-gray-700">Colombia is famous for its diverse ecosystems, from the Amazon rainforest to the Caribbean coastline. The country's rich cultural heritage, influenced by indigenous, European, and African traditions, is reflected in its vibrant music, dance, and cuisine.</p>
+                            <p className="text-gray-700">Colombia is famous for its diverse ecosystems, from the Amazon rainforest to the Caribbean coastline. The country&apos;s rich cultural heritage, influenced by indigenous, European, and African traditions, is reflected in its vibrant music, dance, and cuisine.</p>
 
                             <div className="bg-green-50 border-l-4 border-green-400 p-4 my-6">
                                 <h3 className="font-bold text-green-800">Best Time to Visit</h3>
-                                <p className="text-green-700">December to March is the dry season and ideal for exploring Colombia's diverse regions.</p>
+                                <p className="text-green-700">December to March is the dry season and ideal for exploring Colombia&apos;s diverse regions.</p>
                             </div>
                         </div>
 
@@ -89,7 +89,7 @@ export default function ColombiaPage() {
                                 </li>
                                 <li className="flex items-start">
                                     <span className="text-[#e91e63] mr-2">✦</span>
-                                    <span>Experience Bogotá's vibrant culture</span>
+                                    <span>Experience Bogotá&apos;s vibrant culture</span>
                                 </li>
                                 <li className="flex items-start">
                                     <span className="text-[#e91e63] mr-2">✦</span>

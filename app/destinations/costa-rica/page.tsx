@@ -68,7 +68,7 @@ export default function CostaRicaPage() {
 
                             <div className="bg-emerald-50 border-l-4 border-emerald-400 p-4 my-6">
                                 <h3 className="font-bold text-emerald-800">Best Time to Visit</h3>
-                                <p className="text-emerald-700">December to April (dry season) is ideal for exploring Costa Rica's natural wonders.</p>
+                                <p className="text-emerald-700">December to April (dry season) is ideal for exploring Costa Rica&apos;s natural wonders.</p>
                             </div>
                         </div>
 
