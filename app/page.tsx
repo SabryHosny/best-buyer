@@ -186,7 +186,7 @@ export default function Home() {
       {/* Travel Tips */}
       <section className="py-16 px-4 bg-[#0e3b7c]">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Travel Tips</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Tourism Tips</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Plan Ahead */}
             <div data-aos="fade-up" data-aos-delay="100" className="bg-[#0a1f4a] rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] border-t-2 border-[#ff1a1a]">

@@ -39,7 +39,7 @@ export default function DestinationsPage() {
             id: 'peru',
             name: 'Peru',
             description: 'Trek to Machu Picchu, explore the Sacred Valley, and experience the magic of the Andes.',
-            imagePath: 'https://images.pexels.com/photos/2356045/pexels-photo-2356045.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+            imagePath: 'https://images.pexels.com/photos/90597/pexels-photo-90597.jpeg',
             color: 'from-yellow-500 to-yellow-700'
         },
         {
