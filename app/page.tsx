@@ -31,16 +31,33 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
         <div className="absolute inset-0 bg-gray-900 opacity-30"></div>
-        <div className="relative h-full flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-3xl md:text-5xl font-extrabold mb-6 text-amber-300">BEST BUYER | BEST PRICES FOR YOUR TRAVELS!</h1>
-          <p className="text-lg md:text-xl mb-8 max-w-3xl text-gray-400 font-semibold">Get exclusive discounts on tourism services with your <Link href="/get-card" className="p-1.5 text-gray-50 uppercase hover:text-amber-300">Best Buyers Card</Link></p>
-          <p className="text-base md:text-lg mb-8 max-w-3xl text-gray-300">The #1 discount card for travelers - Save up to 50% on hotels, flights, and more!</p>
-          <Link
-            href="#categories"
-            className="px-8 py-4 bg-amber-300 hover:bg-amber-400 text-black rounded-full text-lg font-semibold transition-colors"
-          >
-            Choose Your Service Now
-          </Link>
+        <div className="relative h-full flex flex-col items-center justify-center text-center px-4 py-8 max-w-4xl mx-auto">
+          <div className="space-y-4 sm:space-y-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-amber-300 leading-tight">
+              <span className="block mb-2">BEST BUYER</span>
+              <span className="block">BEST PRICES FOR YOUR TRAVELS!</span>
+            </h1>
+
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 font-semibold max-w-2xl mx-auto">
+              Get exclusive discounts on tourism services with your{' '}
+              <Link href="/get-card" className="inline-block px-2 py-1 text-white hover:text-amber-300 transition-colors">
+                Best Buyers Card
+              </Link>
+            </p>
+
+            <p className="text-sm sm:text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
+              The #1 discount card for travelers - Save up to 50% on hotels, flights, and more!
+            </p>
+
+            <div className="pt-4 sm:pt-6">
+              <Link
+                href="#categories"
+                className="inline-block px-6 sm:px-8 py-3 sm:py-4 bg-amber-300 hover:bg-amber-400 text-black rounded-full text-base sm:text-lg font-semibold transition-colors"
+              >
+                Choose Your Service Now
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 
