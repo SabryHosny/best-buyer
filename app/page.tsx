@@ -116,7 +116,7 @@ export default function Home() {
                 data-aos-delay="200"
                 className="text-base sm:text-lg"
               >
-                Turn your next vacation into the trip of a lifetime with the Best Buyers Card. Enjoy exclusive discounts of up to 50% on all your travel needs — from luxurious hotels and exciting cruises to private planes and serene yacht rentals.
+                Turn your next vacation into the trip of a lifetime with the Best Buyers Card. Enjoy exclusive discounts of up to 50% on all your tourism needs — from luxurious hotels and exciting cruises to private planes and serene yacht rentals.
               </p>
               <ul
                 data-aos="fade-left"
@@ -125,7 +125,7 @@ export default function Home() {
               >
                 <li><span className="font-medium">Hotels:</span> Find accommodations that perfectly match your style and budget.</li>
                 <li><span className="font-medium">Flights:</span> Book affordable airfare to your dream destinations.</li>
-                <li><span className="font-medium">Visas:</span> Enjoy hassle-free visa assistance to simplify your travel planning.</li>
+                <li><span className="font-medium">Visas:</span> Enjoy hassle-free visa assistance to simplify your tourism planning.</li>
                 <li><span className="font-medium">Cruises & Yachts:</span> Embark on unforgettable adventures across the seas.</li>
                 <li><span className="font-medium">Private Planes:</span> Travel in style and comfort with exclusive private jet deals.</li>
               </ul>
@@ -183,7 +183,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Travel Tips */}
+      {/* Tourism Tips */}
       <section className="py-16 px-4 bg-[#0e3b7c]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Tourism Tips</h2>

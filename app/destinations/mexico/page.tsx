@@ -47,13 +47,13 @@ export default function MexicoPage() {
                         onClick={() => setActiveTab('packages')}
                         className={`px-4 py-2 font-medium text-sm whitespace-nowrap mr-4 ${activeTab === 'packages' ? 'text-[#e91e63] border-b-2 border-[#e91e63]' : 'text-gray-500 hover:text-[#0e3b7c]'}`}
                     >
-                        Travel Packages
+                        Tourism Packages
                     </button>
                     <button
                         onClick={() => setActiveTab('tips')}
                         className={`px-4 py-2 font-medium text-sm whitespace-nowrap ${activeTab === 'tips' ? 'text-[#e91e63] border-b-2 border-[#e91e63]' : 'text-gray-500 hover:text-[#0e3b7c]'}`}
                     >
-                        Travel Tips
+                        Tourism Tips
                     </button>
                 </div>
 
@@ -197,7 +197,7 @@ export default function MexicoPage() {
                 {/* Packages Content */}
                 {activeTab === 'packages' && (
                     <div className="space-y-8">
-                        <h2 className="text-3xl font-bold text-[#0e3b7c] mb-6">Mexico Travel Packages</h2>
+                        <h2 className="text-3xl font-bold text-[#0e3b7c] mb-6">Mexico Tourism Packages</h2>
 
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                             {/* Riviera Maya Package */}
@@ -364,7 +364,7 @@ export default function MexicoPage() {
                 {/* Tips Content */}
                 {activeTab === 'tips' && (
                     <div className="space-y-8">
-                        <h2 className="text-3xl font-bold text-[#0e3b7c] mb-6">Mexico Travel Tips</h2>
+                        <h2 className="text-3xl font-bold text-[#0e3b7c] mb-6">Mexico Tourism Tips</h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             {/* When to Visit */}
@@ -492,7 +492,7 @@ export default function MexicoPage() {
                         <div className="bg-gradient-to-r from-[#0e3b7c] to-[#0a2d5e] rounded-lg shadow-xl overflow-hidden mt-8">
                             <div className="px-6 py-8 md:p-8 text-white">
                                 <h3 className="text-xl font-bold mb-4">Need More Information?</h3>
-                                <p className="mb-6">Our Mexico travel specialists can provide personalized advice and help you plan the perfect trip.</p>
+                                <p className="mb-6">Our Mexico tourism specialists can provide personalized advice and help you plan the perfect trip.</p>
                                 <Link
                                     href="/contact"
                                     className="inline-block py-2 px-6 bg-white text-[#0e3b7c] rounded-md hover:bg-[#e91e63] hover:text-white transition-colors duration-300"

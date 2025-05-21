@@ -32,7 +32,7 @@ export default function FinancialProtectionPage() {
 
                         {/* Subheading */}
                         <p className="mb-12 text-xl text-gray-200 max-w-2xl mx-auto">
-                            We&apos;re working on enhancing your travel security. Our comprehensive financial protection program is coming soon to ensure your peace of mind while traveling.
+                            We&apos;re working on enhancing your tourism security. Our comprehensive financial protection program is coming soon to ensure your peace of mind while traveling.
                         </p>
 
                         {/* Simple Features List */}
@@ -43,7 +43,7 @@ export default function FinancialProtectionPage() {
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#7CFC00] mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                                     </svg>
-                                    <span className="font-medium">Comprehensive travel insurance options</span>
+                                    <span className="font-medium">Comprehensive tourism insurance options</span>
                                 </li>
                                 <li className="flex items-center bg-black bg-opacity-30 p-3 rounded-md">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#7CFC00] mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
