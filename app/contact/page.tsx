@@ -22,24 +22,44 @@ export default function ContactPage() {
         });
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        // In a real application, this would send the form data to a server
-        console.log('Form submitted:', formData);
-        setFormSubmitted(true);
 
-        // Reset form after submission
-        setFormData({
-            name: '',
-            email: '',
-            subject: '',
-            message: ''
-        });
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
 
-        // Reset submission status after 5 seconds
-        setTimeout(() => {
-            setFormSubmitted(false);
-        }, 5000);
+            const data = await response.json();
+
+            if (response.ok) {
+                console.log('Email sent successfully:', data);
+                setFormSubmitted(true);
+
+                // Reset form after submission
+                setFormData({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                });
+
+                // Reset submission status after 5 seconds
+                setTimeout(() => {
+                    setFormSubmitted(false);
+                }, 5000);
+            } else {
+                console.error('Form submission error:', data.error);
+                alert('Failed to send message. Please try again later.');
+            }
+        } catch (error) {
+            console.error('Form submission error:', error);
+            alert('Failed to send message. Please try again later.');
+        }
     };
 
     return (
