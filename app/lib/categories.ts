@@ -103,9 +103,9 @@ Join Best Buyers today and maximize your travel experiences!`,
     },
     {
         id: 9,
-        name: 'SHOPPING',
-        image: '/images/shopping1.jpg',
-        images: ['/images/shopping2.jpg', '/images/shopping3.jpg', '/images/shopping4.jpg'],
+        name: 'BOAT AND YACHT RENTAL',
+        image: '/images/boat1.jpg',
+        images: ['/images/boat1.jpg', '/images/boat2.jpg', '/images/boat3.jpg'],
         description: `Explore the World with Best Buyers Card:
     
     **Core Services**
@@ -125,7 +125,7 @@ Join Best Buyers today and maximize your travel experiences!`,
     - Market Shops
     
     Join Best Buyers today and maximize your travel experiences!`,
-        comingSoon: true
+        comingSoon: false
     },
     {
         id: 10,
