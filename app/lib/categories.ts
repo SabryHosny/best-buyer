@@ -106,25 +106,8 @@ Join Best Buyers today and maximize your travel experiences!`,
         name: 'BOAT AND YACHT RENTAL',
         image: '/images/boat1.jpg',
         images: ['/images/boat1.jpg', '/images/boat2.jpg', '/images/boat3.jpg'],
-        description: `Explore the World with Best Buyers Card:
-    
-    **Core Services**
-    - Private Villas & Chalets: Sahel, Ain Sokhna, El Gouna, Dahab, Sharm El Sheikh, Hurghada
-    - Private Jet Charter: Worldwide coverage
-    - Hotels: Perfect accommodations for every style and budget
-    - Flights: Affordable tickets to dream destinations
-    - Visas: Hassle-free travel planning assistance
-    - Cruises: Unforgettable voyages to new horizons
-    - Yacht Rentals: Ultimate luxury and privacy on water
-    
-    **Coming Soon (6 Months)**
-    Exclusive discounts on:
-    - Restaurants
-    - Cafes
-    - Shopping
-    - Market Shops
-    
-    Join Best Buyers today and maximize your travel experiences!`,
+        description: `So you can rent a luxury experience with professionals.
+You can rent a boat or yacht in different areas such as Marsa Alam, South Sinai or Hurghada.`,
         comingSoon: false
     },
     {
