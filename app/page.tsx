@@ -27,9 +27,17 @@ export default function Home() {
       {/* Hero Banner */}
       <div className="relative h-[calc(100vh-6rem)] bg-black text-white overflow-hidden">
         <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover opacity-45">
-          <source src="/videos/heroVideo.mp4" type="video/mp4" />
+          <source src="/videos/heroVideo4.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+
+        {/* <Image
+          src="/images/hero.jpg"
+          alt="Aerial view from airplane window"
+          fill
+          className="absolute inset-0 w-full h-full object-cover opacity-45"
+          priority
+        /> */}
         <div className="absolute inset-0 bg-gray-900 opacity-30"></div>
         <div className="relative h-full flex flex-col items-center justify-center text-center px-4 py-8 max-w-4xl mx-auto">
           <div className="space-y-4 sm:space-y-6">
