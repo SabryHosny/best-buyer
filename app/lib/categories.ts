@@ -4,7 +4,7 @@ export const categories = [
     {
         id: 1,
         name: 'DIVING',
-        image: '/images/diving3.jpg',
+        image: '/images/diving1.jpg',
         images: ['/images/diving1.jpg', '/images/diving2.jpg', '/images/diving3.jpg'],
         description: 'Diving is a sport that involves plunging into water, usually headfirst, and is often accompanied by gymnastic and acrobatic stunts. In its more elaborate and acrobatic form, diving began in Europe in the early 19th century as a pastime for gymnasts. It later developed into a competitive sport by the late 19th century.',
         comingSoon: false
@@ -64,15 +64,15 @@ Join Best Buyers today and maximize your travel experiences!`,
     {
         id: 4,
         name: 'PRIVATE PLANES',
-        image: '/images/private-planes.jpg',
+        image: '/images/private-planes2.jpg',
         images: ['/images/private-planes1.jpg', '/images/private-planes2.jpg', '/images/private-planes3.jpg'],
         description: 'Consistent across the whole fleet, welcomes travelers all over the world. Passengers can use a fully enabled business suite or relax in a restful family space. The cabins are equipped for all needs.',
-        comingSoon: false
+        comingSoon: true
     },
     {
         id: 5,
         name: 'RESTAURANT',
-        image: '/images/restaurant2.jpg',
+        image: '/images/restaurant4.jpg',
         images: ['/images/restaurant1.jpg', '/images/restaurant2.jpg', '/images/restaurant3.jpg'],
         description: 'Coming soon...',
         comingSoon: false
@@ -96,7 +96,7 @@ Join Best Buyers today and maximize your travel experiences!`,
     {
         id: 8,
         name: 'CAR RENTAL',
-        image: '/images/car-renral1.jpg',
+        image: '/images/car-renral2.jpg',
         images: ['/images/car-renral2.jpg', '/images/car-renral3.jpg', '/images/car-renral4.jpg'],
         description: `The company is distinguished by the strongest offers on car rental inside and outside Egypt.`,
         comingSoon: false
@@ -139,7 +139,7 @@ Join Best Buyers today and maximize your travel experiences!`,
     {
         id: 11,
         name: 'HEALTH CARE',
-        image: '/images/healthcare1.jpg',
+        image: '/images/healthcare3.jpg',
         images: ['/images/healthcare2.jpg', '/images/healthcare3.jpg', '/images/healthcare4.jpg'],
         description: `Explore the World with Best Buyers Card:
 
